@@ -397,6 +397,22 @@ max-width: 650px;
   .load-more-wrap { text-align: center; margin-top: 46px; }
 
   .about-section { background: #37352f; color: var(--cream); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(360px, .75fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 40px;
+  line-height: 1.25;
+  max-width: 1000px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  word-break: keep-all;
+}
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
   .about-section .section-tag { color: var(--yellow); }
   .about-section .section-desc { color: rgba(255,253,245,.65); }
@@ -430,7 +446,10 @@ max-width: 650px;
     .section { padding: 74px 24px; }
     .stats { padding: 0 24px 70px; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .write-layout, .about-grid { grid-template-columns: 1fr; gap: 30px; }
+    .about-title {
+  font-size: 34px;
+  line-height: 1.28;
+}
     .write-note { position: relative; top: auto; }
     .card-grid { columns: 2; }
     .section-head { align-items: flex-start; flex-direction: column; }
@@ -602,7 +621,10 @@ max-width: 650px;
     <div class="section-inner about-grid">
       <div>
         <p class="section-tag">ABOUT</p>
-        <h2 class="section-title">대화를 더 많이 하자는 게 아니라, 지금의 말을 더 따뜻하게<br>하자는 제안.</h2>
+        <h2 class="section-title about-title">
+          대화를 더 많이 하자는 게 아니라,<br>
+          지금의 말을 더 따뜻하게 하자는 제안.
+        </h2>
         <p class="section-desc">온말은 20대 청년이 가족과의 대화 속에서 경험한 망설임과 바래왔던 반응을 기록합니다. 탓하기보다, 서로의 말이 조금 더 따뜻하게 닿을 수 있는 태도를 보여줍니다.</p>
       </div>
       <div class="about-cards">
